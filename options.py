@@ -64,7 +64,7 @@ parser.add_argument('--device_idx', type=str, default='0')
 # optimizer #
 parser.add_argument('--optimizer', type=str, default='Adam', choices=['SGD', 'Adam'])
 parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
-parser.add_argument('--weight_decay', type=float, default=0, help='l2 regularization')
+parser.add_argument('--weight_decay', type=float, default=0.01, help='l2 regularization')
 parser.add_argument('--momentum', type=float, default=None, help='SGD momentum')
 # lr scheduler #
 parser.add_argument('--decay_step', type=int, default=15, help='Decay step for StepLR')
